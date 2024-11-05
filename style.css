@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kranky&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(242, 184, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: orange;
+    font-size: 2em;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 40vh;
+    z-index: 10;
+    font-family: "Kranky", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: float 3s ease-in-out infinite, colorChange 5s ease infinite alternate;
+    
+    text-shadow: 
+        0 0 10px rgba(255, 87, 51, 0.5),  
+        0 0 20px rgba(255, 87, 51, 0.3),  
+        0 0 30px rgba(255, 87, 51, 0.1);  
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff5733;
+    }
+    25% {
+        color: #33ff57; 
+    }
+    50% {
+        color: #3357ff;
+    }
+    75% {
+        color: #ff33a6; 
+    }
+    100% {
+        color: #ffcc33;
+    }
+}
